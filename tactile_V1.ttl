@@ -1,0 +1,1294 @@
+@prefix tactile: <jaist.ac.jp/holab> .
+
+<jaist.ac.jp/holab#MaterialPhysicalProperty>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasYoungModulus>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasShearModulus>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasPoisonRatio>
+                ] .
+
+<jaist.ac.jp/holab#hasShape>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasSkinType>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasTouchingState>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasDeformation>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#NoTouching>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<jaist.ac.jp/holab#hasSkinMaterial>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasThickness>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasSkinTexture>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasAppliedForce>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#isLocatedAt>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#TouchInformation>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Acceleration> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAcceleration>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Velocity> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasVelocity>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#AppliedForce> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAppliedForce>
+                ] .
+
+<jaist.ac.jp/holab#hasShearModulus>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasPoisonRatio>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasMagnitude>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasDimention>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasType>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasTimeStamp>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasMarker>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#InsideOfSkin>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<jaist.ac.jp/holab#hasVelocity>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasVolume>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#SkinGeometry>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDimention>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDimention>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasThickness>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasShape>
+                ] .
+
+<jaist.ac.jp/holab#Distribution>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<jaist.ac.jp/holab#OutsideOfSkin>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<jaist.ac.jp/holab#hasAcceleration>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasForceType>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasID>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#Touching>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<jaist.ac.jp/holab#hasTouchInformation>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#SkinMaterial>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasStiffnessMatrice>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#MaterialPhysicalProperty> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasMaterialPhysicalProperty>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasType>
+                ] .
+
+<jaist.ac.jp/holab#hasValue>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#Acceleration>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAffectedMarkerPosition>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasMagnitude>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDirection>
+                ] .
+
+<jaist.ac.jp/holab#Velocity>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAffectedMarkerPosition>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasMagnitude>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDirection>
+                ] .
+
+<jaist.ac.jp/holab#hasDirection>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#AppliedForce>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAffectedMarkerPosition>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasMagnitude>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDirection>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          [ a       <http://www.w3.org/2002/07/owl#Class> ;
+                            <http://www.w3.org/2002/07/owl#oneOf>
+                                    ( <jaist.ac.jp/holab#Concentration> <jaist.ac.jp/holab#Distribution> )
+                          ] ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasForceType>
+                ] .
+
+<jaist.ac.jp/holab#hasStiffnessMatrice>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#SkinBasedTactile>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <jaist.ac.jp/holab#Tactile> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#TouchInformation> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTouchInformation>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#SkinGeometry> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasSkinGeometry>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#boolean> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasSkinTexture>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasSkinType>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#SkinMaterial> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasSkinMaterial>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasVolume>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasWeight>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onClass>
+                          [ a       <http://www.w3.org/2002/07/owl#Class> ;
+                            <http://www.w3.org/2002/07/owl#oneOf>
+                                    ( <jaist.ac.jp/holab#Touching> <jaist.ac.jp/holab#NoTouching> )
+                          ] ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTouchingState>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasColor>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasMarker>
+                ] .
+
+<jaist.ac.jp/holab#Tactile>
+        a       <http://www.w3.org/2002/07/owl#Class> .
+
+<jaist.ac.jp/holab#hasUnit>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasWeight>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#Measurement>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasAccuracy>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#dateTimeStamp> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasTimeStamp>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasUnit>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#float> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasValue>
+                ] .
+
+<jaist.ac.jp/holab#hasAffectedMarkerPosition>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasYoungModulus>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasColor>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasCoordinate>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasAccuracy>
+        a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
+<jaist.ac.jp/holab#hasSkinGeometry>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#hasNeighborMarker>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<jaist.ac.jp/holab#Concentration>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<jaist.ac.jp/holab#Marker>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasNeighborMarker>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasID>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          [ a       <http://www.w3.org/2002/07/owl#Class> ;
+                            <http://www.w3.org/2002/07/owl#oneOf>
+                                    ( <jaist.ac.jp/holab#OutsideOfSkin> <jaist.ac.jp/holab#InsideOfSkin> )
+                          ] ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#isLocatedAt>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasColor>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasID>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasCoordinate>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDeformation>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasNeighborMarker>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasNeighborMarker>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          [ a       <http://www.w3.org/2002/07/owl#Class> ;
+                            <http://www.w3.org/2002/07/owl#oneOf>
+                                    ( <jaist.ac.jp/holab#OutsideOfSkin> <jaist.ac.jp/holab#InsideOfSkin> )
+                          ] ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#isLocatedAt>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDeformation>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasColor>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDeformation>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasCoordinate>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasDeformation>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          [ a       <http://www.w3.org/2002/07/owl#Class> ;
+                            <http://www.w3.org/2002/07/owl#oneOf>
+                                    ( <jaist.ac.jp/holab#OutsideOfSkin> <jaist.ac.jp/holab#InsideOfSkin> )
+                          ] ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#isLocatedAt>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasID>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          [ a       <http://www.w3.org/2002/07/owl#Class> ;
+                            <http://www.w3.org/2002/07/owl#oneOf>
+                                    ( <jaist.ac.jp/holab#OutsideOfSkin> <jaist.ac.jp/holab#InsideOfSkin> )
+                          ] ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#isLocatedAt>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasColor>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#minQualifiedCardinality>
+                          "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+                  <http://www.w3.org/2002/07/owl#onDataRange>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasID>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasColor>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Marker> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasNeighborMarker>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasCoordinate>
+                ] ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                [ a       <http://www.w3.org/2002/07/owl#Restriction> ;
+                  <http://www.w3.org/2002/07/owl#allValuesFrom>
+                          <jaist.ac.jp/holab#Measurement> ;
+                  <http://www.w3.org/2002/07/owl#onProperty>
+                          <jaist.ac.jp/holab#hasCoordinate>
+                ] .
+
+<jaist.ac.jp/holab#hasMaterialPhysicalProperty>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
