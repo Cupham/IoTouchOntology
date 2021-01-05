@@ -162,16 +162,40 @@ public class App
     			cls.addSuperClass(colorPP());
     			cls.addSuperClass(model.createObjectAllValuesFrom(
     					 model.createObjectProperty(NS + "hasCoordinate"), 
-    					 measurementClass()));	 
+    					 coordinateCls()));	 
     			cls.addSuperClass(model.createObjectAllValuesFrom(
    					 model.createObjectProperty(NS + "hasDeformation"), 
-   					 measurementClass()));	
+   					 deformationCls()));	
     			cls.addSuperClass(model.createObjectAllValuesFrom(
       					 model.createObjectProperty(NS + "hasNeighborMarker"), 
       					 model.getOntClass(NS + "Marker")));
     			cls.addSuperClass(model.createObjectAllValuesFrom(
     					 model.createObjectProperty(NS + "isLocatedAt"), skinLocationValue()));
     	return cls;
+    }
+    public static OntClass coordinateCls() {
+    	OntClass cls = model.createOntClass(NS + "Coordinate");
+    	cls.addSuperClass(model.getOWLNothing());
+    	cls.addSuperClass(model.createObjectMinCardinality(
+    			model.createObjectProperty(NS +"X"), 1, measurementClass()));
+    	cls.addSuperClass(model.createObjectMinCardinality(
+    			model.createObjectProperty(NS +"Y"), 1, measurementClass()));
+    	cls.addSuperClass(model.createObjectMinCardinality(
+    			model.createObjectProperty(NS +"Z"), 1, measurementClass()));
+    	return cls;
+    	
+    }
+    public static OntClass deformationCls() {
+    	OntClass cls = model.createOntClass(NS + "Deformation");
+    	cls.addSuperClass(model.getOWLNothing());
+    	cls.addSuperClass(model.createObjectMinCardinality(
+    			model.createObjectProperty(NS +"deltaX"), 1, measurementClass()));
+    	cls.addSuperClass(model.createObjectMinCardinality(
+    			model.createObjectProperty(NS +"deltaY"), 1, measurementClass()));
+    	cls.addSuperClass(model.createObjectMinCardinality(
+    			model.createObjectProperty(NS +"deltaZ"), 1, measurementClass()));
+    	return cls;
+    	
     }
     public static OntClass geometryCls() {
     	OntClass cls = model.createOntClass(NS + "SkinGeometry");
